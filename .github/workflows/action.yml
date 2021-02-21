@@ -24,6 +24,6 @@ jobs:
           password: ${{ secrets.MAIL_PASSWORD }}
           subject: 北京天气(${{env.REPORT_DATE}})
           body: file://result.html
-          to: 925366150@qq.com
+          to: ${{ secrets.RECEIVER }}
           from: GitHub Actions
           content_type: text/html
